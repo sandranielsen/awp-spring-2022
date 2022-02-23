@@ -1,12 +1,18 @@
 import { Link, Outlet, LiveReload, Links, Meta, Scripts } from "remix";
 import globalStylesUrl from "~/styles/global.css";
 
-export const links = () => [
-  {
-    rel: "stylesheet",
-    href: globalStylesUrl,
-  },
-];
+export function links() {
+  return [
+    {
+      rel: "stylesheet",
+      href: "https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css",
+    },
+    {
+      rel: "stylesheet",
+      href: globalStylesUrl,
+    },
+  ];
+}
 
 export const meta = () => ({
   description: "A recipe blog",
