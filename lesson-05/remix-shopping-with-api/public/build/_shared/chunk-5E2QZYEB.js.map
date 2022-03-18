@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/PageHeader.jsx"],
+  "sourcesContent": ["export default function PageHeader({ title, subtitle, children }) {\r\n  return (\r\n    <div className=\"flex items-center justify-between mb-5\">\r\n      <div>\r\n        <h1 className=\"text-2xl font-bold\">{title}</h1>\r\n        {subtitle && (\r\n          <h2 className=\"font-semibold text-gray-400\">{subtitle}</h2>\r\n        )}\r\n      </div>\r\n      {children}\r\n    </div>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;AAAA;AAAe,oBAAoB,EAAE,OAAO,UAAU,YAAY;AAChE,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,OAAD,MACE,oCAAC,MAAD;AAAA,IAAI,WAAU;AAAA,KAAsB,QACnC,YACC,oCAAC,MAAD;AAAA,IAAI,WAAU;AAAA,KAA+B,YAGhD;AAAA;",
+  "names": []
+}

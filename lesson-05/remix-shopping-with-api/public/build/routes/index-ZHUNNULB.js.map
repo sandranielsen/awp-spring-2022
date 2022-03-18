@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\sandr\\Desktop\\awp-spring-2022\\lesson-05\\remix-shopping-with-api\\app\\routes\\index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"C:\\\\Users\\\\sandr\\\\Desktop\\\\awp-spring-2022\\\\lesson-05\\\\remix-shopping-with-api\\\\app\\\\routes\\\\index.jsx\";", "import LinkButton from \"~/components/LinkButton.jsx\";\r\n\r\nexport default function Home() {\r\n  return (\r\n    <section className=\"flex-grow items-center justify-center\">\r\n      <h1 className=\"text-4xl font-bold text-gray-400\">\r\n        The web's premiere destination for shopping absolutely{\" \"}\r\n        <i className=\"italic\">anything</i>.\r\n      </h1>\r\n    </section>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;;;AAAA;;;ACAA;AAEe,gBAAgB;AAC7B,SACE,oCAAC,WAAD;AAAA,IAAS,WAAU;AAAA,KACjB,oCAAC,MAAD;AAAA,IAAI,WAAU;AAAA,KAAmC,0DACQ,KACvD,oCAAC,KAAD;AAAA,IAAG,WAAU;AAAA,KAAS,aAAY;AAAA;",
+  "names": []
+}

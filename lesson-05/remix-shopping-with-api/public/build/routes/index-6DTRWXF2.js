@@ -1,0 +1,25 @@
+import "/build/_shared/chunk-5J26GPL2.js";
+import "/build/_shared/chunk-EBNT4Q6V.js";
+import {
+  React,
+  init_react
+} from "/build/_shared/chunk-P2FTGPOX.js";
+
+// browser-route-module:C:\Users\sandr\Desktop\awp-spring-2022\lesson-05\remix-shopping-with-api\app\routes\index.jsx?browser
+init_react();
+
+// app/routes/index.jsx
+init_react();
+function Home() {
+  return /* @__PURE__ */ React.createElement("section", {
+    className: "flex-grow items-center justify-center"
+  }, /* @__PURE__ */ React.createElement("h1", {
+    className: "text-4xl font-bold text-gray-400"
+  }, "The web's premiere destination for shopping absolutely", " ", /* @__PURE__ */ React.createElement("i", {
+    className: "italic"
+  }, "anything"), "."));
+}
+export {
+  Home as default
+};
+//# sourceMappingURL=/build/routes/index-6DTRWXF2.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\sandr\\Desktop\\awp-spring-2022\\lesson-05\\remix-shopping-with-api\\app\\routes\\api\\mens-fashion\\index.js?browser", "../../../../../app/routes/api/mens-fashion/index.js"],
+  "sourcesContent": ["export * from \"C:\\\\Users\\\\sandr\\\\Desktop\\\\awp-spring-2022\\\\lesson-05\\\\remix-shopping-with-api\\\\app\\\\routes\\\\api\\\\mens-fashion\\\\index.js\";", "import db from \"~/db/mens-fashion/db.server.js\";\r\n\r\nexport async function loader() {\r\n  return db.data.products ?? [];\r\n}\r\n\r\nexport async function action({ request, params }) {\r\n  switch (request.method) {\r\n    case \"POST\": {\r\n      /* handle \"POST\" */\r\n      const body = await request.json();\r\n      db.data.products?.push(body);\r\n      db.write();\r\n      return json(body, {\r\n        status: 201,\r\n      });\r\n    }\r\n    case \"PUT\": {\r\n      /* handle \"PUT\" */\r\n    }\r\n    case \"PATCH\": {\r\n      /* handle \"PATCH\" */\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAAA,uBAAe;AAEf,wBAA+B;AAC7B,SAAO,yBAAG,KAAK,YAAY;AAAA;AAG7B,sBAA6B,EAAE,SAAS,UAAU;AAChD,UAAQ,QAAQ;AAAA,SACT,QAAQ;AAEX,YAAM,OAAO,MAAM,QAAQ;AAC3B,+BAAG,KAAK,UAAU,KAAK;AACvB,+BAAG;AACH,aAAO,KAAK,MAAM;AAAA,QAChB,QAAQ;AAAA;AAAA;AAAA,SAGP,OAAO;AAAA;AAAA,SAGP,SAAS;AAAA;AAAA;AAAA;",
+  "names": []
+}

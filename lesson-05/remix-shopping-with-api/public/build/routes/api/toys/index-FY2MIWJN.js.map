@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\sandr\\Desktop\\awp-spring-2022\\lesson-05\\remix-shopping-with-api\\app\\routes\\api\\toys\\index.js?browser", "../../../../../app/routes/api/toys/index.js"],
+  "sourcesContent": ["export * from \"C:\\\\Users\\\\sandr\\\\Desktop\\\\awp-spring-2022\\\\lesson-05\\\\remix-shopping-with-api\\\\app\\\\routes\\\\api\\\\toys\\\\index.js\";", "import db from \"~/db/toys/db.server.js\";\r\n\r\nexport async function loader() {\r\n  return db.data.products ?? [];\r\n}\r\n\r\nexport async function action({ request, params }) {\r\n  switch (request.method) {\r\n    case \"POST\": {\r\n      const body = await request.json();\r\n      db.data.products?.push(body);\r\n      db.write();\r\n      return json(body, {\r\n        status: 201,\r\n      });\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAAA,uBAAe;AAEf,wBAA+B;AAC7B,SAAO,yBAAG,KAAK,YAAY;AAAA;AAG7B,sBAA6B,EAAE,SAAS,UAAU;AAChD,UAAQ,QAAQ;AAAA,SACT,QAAQ;AACX,YAAM,OAAO,MAAM,QAAQ;AAC3B,+BAAG,KAAK,UAAU,KAAK;AACvB,+BAAG;AACH,aAAO,KAAK,MAAM;AAAA,QAChB,QAAQ;AAAA;AAAA;AAAA;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:C:\\Users\\sandr\\Desktop\\awp-spring-2022\\lesson-05\\remix-shopping-with-api\\app\\routes\\api\\luggage\\index.js?browser", "../../../../../app/routes/api/luggage/index.js"],
+  "sourcesContent": ["export * from \"C:\\\\Users\\\\sandr\\\\Desktop\\\\awp-spring-2022\\\\lesson-05\\\\remix-shopping-with-api\\\\app\\\\routes\\\\api\\\\luggage\\\\index.js\";", "import db from \"~/db/luggage/db.server.js\";\r\n\r\nexport async function loader() {\r\n  return db.data.products ?? [];\r\n}\r\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAAA,uBAAe;AAEf,wBAA+B;AAC7B,SAAO,yBAAG,KAAK,YAAY;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/LinkButton.jsx"],
+  "sourcesContent": ["import { Link } from \"remix\";\r\n\r\nexport default function Button({ to, children }) {\r\n  return (\r\n    <Link\r\n      className=\"bg-blue-500 text-white font-bold py-2 px-4 rounded my-3 inline-block\"\r\n      to={to}>\r\n      {children}\r\n    </Link>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;;;;AAAA;AAEe,gBAAgB,EAAE,IAAI,YAAY;AAC/C,SACE,oCAAC,MAAD;AAAA,IACE,WAAU;AAAA,IACV;AAAA,KACC;AAAA;",
+  "names": []
+}
