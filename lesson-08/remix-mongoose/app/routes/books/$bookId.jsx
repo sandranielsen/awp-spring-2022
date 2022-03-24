@@ -3,7 +3,17 @@ import connectDb from "~/db/connectDb.server.js";
 
 export async function loader({ params }) {
   const db = await connectDb();
-  return db.models.Book.findById(params.bookId);
+  const book = await db.book.findOne({
+    where: { slug: params.slug },
+  });
+  //return db.models.Book.findById(params.bookId);
+  if (!book) {
+    throw new Response("Not found",
+      {
+        status: 404,
+      });
+  }
+  return book;
 }
 
 export default function BookPage() {
@@ -11,9 +21,8 @@ export default function BookPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">{book.title}</h1>
-      <code>
-        <pre>{JSON.stringify(book, null, 2)}</pre>
-      </code>
+      <p>{book.author}</p>
+      <p>{book.price}</p>
     </div>
   );
 }
